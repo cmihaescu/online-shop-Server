@@ -19,6 +19,7 @@ router.post("/newOrderSandbox", async function (req, res, next) {
       },
     }
   );
+  res.set("Access-Control-Allow-Origin","*");
   res.json(response.data);
 });
 
